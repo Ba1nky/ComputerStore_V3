@@ -26,7 +26,7 @@ namespace ComputerStore.Models
         [Required(ErrorMessage = "Категорія не повина бути пустною")]
         [Display(Name = "Категорія")]
         public int CategoryId { get; set; }
-        public Category Category { get; set; } = null!;
+        public Category? Category { get; set; } 
 
         public List<Purchase> Purchases { get; set; } = new List<Purchase>();
 
